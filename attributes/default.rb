@@ -105,16 +105,16 @@ default['dbmail']['ldap']['referrals'] = 'yes' # AD users may want to set this t
 default['dbmail']['ldap']['user_objectclass'] = 'top,account,dbmailUser'
 default['dbmail']['ldap']['forw_objectclass'] = 'top,account,dbmailForwardingAddress'
 default['dbmail']['ldap']['cn_string'] = 'uid'
-default['dbmail']['ldap']['field_passwd]'] = 'userPassword'
+default['dbmail']['ldap']['field_passwd'] = 'userPassword'
 default['dbmail']['ldap']['field_uid'] = 'uid'
 default['dbmail']['ldap']['field_nid'] = 'uidNumber'
 default['dbmail']['ldap']['min_nid'] = '10000'
-default['dbmail']['ldap']['max_nid]'] = '15000'
+default['dbmail']['ldap']['max_nid'] = '15000'
 default['dbmail']['ldap']['field_cid'] = 'gidNumber'
 default['dbmail']['ldap']['min_cid'] = '10000'
-default['dbmail']['ldap']['max_cid]'] = '15000'
+default['dbmail']['ldap']['max_cid'] = '15000'
 default['dbmail']['ldap']['field_mail'] = 'mail' # a comma-separated list of attributes to match when searching for users or forwards that match a delivery address. A match on any of them is a hit.
-default['dbmail']['ldap']['field_quota]'] = 'mailQuota' # field that holds the mail-quota size for a user.
+default['dbmail']['ldap']['field_quota'] = 'mailQuota' # field that holds the mail-quota size for a user.
 default['dbmail']['ldap']['field_fwdtarget'] = 'mailForwardingAddress' # field that holds the forwarding address.
 #default['dbmail']['ldap']['query_string'] = '(mail=%s)' # override the query string used to search for users or forwards with a delivery address.
 
