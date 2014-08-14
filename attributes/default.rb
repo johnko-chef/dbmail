@@ -23,6 +23,7 @@ default['dbmail']['enable_imapd']  = 'no'
 default['dbmail']['enable_lmtpd']  = 'no'
 default['dbmail']['enable_pop3d']  = 'no'
 default['dbmail']['enable_sieved'] = 'no'
+default['dbmail']['conf_dir'] = '/usr/local/etc'
 
 # DBMAIL
 default['dbmail']['dbmail']['dburi'] = 'sqlite:///var/tmp/dbmail.db'
