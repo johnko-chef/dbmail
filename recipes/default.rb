@@ -47,24 +47,28 @@ end
 
 if node['dbmail']['enable_imapd'] == 'yes'
   svc 'dbmail-imapd' do
+    supports status: true, restart: true
     action [ :enable, :start ]
   end
 end
 
 if node['dbmail']['enable_lmtpd'] == 'yes'
   svc 'dbmail-lmtpd' do
+    supports status: true, restart: true
     action [ :enable, :start ]
   end
 end
 
   if node['dbmail']['enable_pop3d'] == 'yes'
   svc 'dbmail-pop3d' do
+    supports status: true, restart: true
     action [ :enable, :start ]
   end
 end
 
 if node['dbmail']['enable_sieved'] == 'yes'
   svc 'dbmail-timsieved' do
+    supports status: true, restart: true
     action [ :enable, :start ]
   end
 end
