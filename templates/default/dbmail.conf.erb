@@ -6,8 +6,9 @@
 
 <% node['dbmail'].each do |key, value| -%>
 <%  if value.kind_of? Hash -%>
-<%=   "[#{key.uppercase}]"%>
+<%=   "[#{key.upcase}]"%>
 <%    value.each do |sub_key, sub_value| -%>
-<%=     "#{sub_key} #{sub_value}" %>
+<%=     "#{sub_key} = #{sub_value}" %>
 <%    end -%>
+<%  end -%>
 <% end -%>
